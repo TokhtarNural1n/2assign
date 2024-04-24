@@ -1,5 +1,7 @@
 import Interfaces.MyListInterface;
 
+import java.util.Iterator;
+
 public class MyArrayList<T> implements MyListInterface<T> {
     private Object[] arr;
     private int size;
