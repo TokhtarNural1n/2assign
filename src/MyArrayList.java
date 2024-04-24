@@ -109,7 +109,6 @@ public class MyArrayList<T> implements MyListInterface<T> {
         return -1;
     }
 
-    @Override
     public boolean exist(Object object) {
         return false;
     }
@@ -133,6 +132,11 @@ public class MyArrayList<T> implements MyListInterface<T> {
 
     public int size() {
         return size;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
     }
 
     private void ensureCapacity(int minCapacity) {
